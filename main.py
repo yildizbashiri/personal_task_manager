@@ -1,8 +1,14 @@
 name = input("Enter your name: ")
 
 print("Welcome", name)
-print("Personal Task Manager")
+tasks = []
+while True:
+    task = input("Enter a task(or exit): ")
+    if task == "exit":
+        break
+    tasks.append(task)
 
-task = input("Enter a task: ")
+print("your tasks")
 
-print("Your task is:", task)
+for task in tasks:
+    print(task) 
