@@ -8,6 +8,9 @@ while True:
     if task == "exit":
         break
     tasks.append(task)
+    file = open("tasks.txt", "a")
+    file.write(task + "\n")
+    file.close()
 
 print("your tasks")
 
