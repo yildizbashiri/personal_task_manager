@@ -1,3 +1,4 @@
+from tasks import show_tasks
 name = input("Enter your name: ")
 
 print("Welcome", name)
@@ -12,3 +13,5 @@ print("your tasks")
 
 for task in tasks:
     print(task) 
+
+show_tasks(tasks)
